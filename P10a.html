@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta de satisfacción</title>
+  </head>
+  <body>
+    <h>Comparte con nosotros tu grado se satisfacción:</h>
+     <form method="post" action="miservidor.php">
+     <div>
+       <label for=”codigopostal”>Código Postal:</label>
+       <input id=”codigopostal” type=”number”>
+     </div>
+     <div>
+       <label for=”nivel”>Nivel de satisfacción:</label>       
+       <select id=”nivel”>
+         <option value=”1”>1</option>
+         <option value=”2”>2</option>
+         <option value=”3”>3</option>
+         <option value=”4”>4</option>
+         <option value=”5”>5</option>
+       </select>
+    </div>
+     <div>
+       <label for=”email”>Email:</label>
+       <input id=”email” type=”text”>
+     </div>
+    <div>
+     <label for=”positivo”>Expón brevemente los puntos fuertes del producto:</label>
+     <textarea id=”positivo”></textarea>
+   </div>
+    <div>
+     <label for=”negativo”>Expón brevemente los puntos débiles del producto:</label>
+     <textarea id=”negativo”></textarea>
+   </div>
+    <div>
+       <label for=”caracteristica1”>Frecuencia con la que usas el producto:</label>
+       <select id=”caracteristica1”>
+         <option value=”5”>Lo uso siempre</option>
+         <option value=”4”>Lo uso a menudo</option>
+         <option value=”3”>Lo uso a veces</option>
+         <option value=”2”>A penas lo uso</option>
+         <option value=”1”>No lo uso nunca</option>
+       </select>
+   </div>
+   <div>
+       <label for=”caracteristica2”>Cuando lo utilizas ¿de qué manera consideras que funciona?:</label>
+         <input name="caracteristica2" type="radio" value="5">Excepcional
+         <input name="caracteristica2" type="radio" value="4">Mejor de lo esperado
+         <input name="caracteristica2" type="radio" value="3">Como esperaba
+         <input name="caracteristica2" type="radio" value="2">Podría mejorar
+         <input name="caracteristica2" type="radio" value="1">Decepcionante 
+   </div>
+
+   <input type=”submit” value=”Enviar”>
+</form> 
+      
+  </body>
+</html>
